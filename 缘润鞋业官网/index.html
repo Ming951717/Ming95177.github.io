@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缘润鞋业官方网站</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            background-color: #343434;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            position: fixed;
+            z-index: 999;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            color: aliceblue;
+            font-family: "微软雅黑";
+            line-height: 70px;
+            font-weight: 700;
+
+
+        }
+
+        .header .logo span {
+            color: rgb(255, 153, 0);
+
+        }
+
+        .header .items {
+            display: flex;
+        }
+
+        .header .items a {
+            width: 120px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            color: aliceblue;
+            transition: 0.3s all;
+
+
+        }
+
+        .header .items a:hover {
+            /* font-size: 18px; */
+            transform: scale(0.9);
+            background-color: #5c5c4e;
+
+
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-color: aqua;
+            background: url(https://picsum.photos/1920/500?random=8) no-repeat center center;
+            background-size: cover;
+        }
+
+        .banner .banner-text {
+            text-align: center;
+        }
+
+        .banner .banner-text h1 {
+            font-size: 48px;
+            font-family: "微软雅黑";
+            margin: 0 0 20px 0;
+            color: white;
+        }
+
+        .banner .banner-text p {
+            font-size: 20px;
+            font-family: "微软雅黑";
+            margin: 0 0 50px 0;
+            color: white;
+        }
+
+        .probucts {
+            height: 554px;
+            /* background-color: rgb(217, 255, 0); */
+            padding: 80px 50px;
+
+        }
+
+        .probucts h2 {
+            margin: 0 0 50px 0;
+            font-size: 36px;
+            text-align: center;
+            color: #333333;
+        }
+
+        .probucts .probucts-card {
+            height: 297px;
+            /* background-color: aliceblue; */
+        }
+
+        .probucts-card {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .probucts-card-items {
+            text-align: center;
+            transition: transform 0.3s ease;
+
+        }
+
+        .probucts-card-items:hover {
+            transform: translateY(-10px);
+        }
+
+        .probucts-card-items img {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .probucts-card-items h3 {
+            margin: 15px 0;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .probucts-card-items p {
+            color: #666;
+        }
+
+        .about {
+            height: 464px;
+            /* background-color: rgb(42, 252, 0); */
+            padding: 80px 50px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .about img {
+            border-radius: 8px;
+        }
+
+        .about .about-text h2 {
+            /* flex: 1; */
+            font-size: 36px;
+            color: #333;
+            margin: 0 0 20px 0;
+        }
+
+        .about .about-text p {
+            margin: 0 0 15px 0;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .footer {
+            height: 350px;
+            background-color: #222222;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* gap: 30PX; */
+        }
+
+        .footer .footer-cor {
+            min-width: 200px;
+        }
+
+        .footer .footer-cor h3 {
+            color: rgb(238, 166, 11);
+            margin: 0 0 20px 0;
+            font-size: 18px;
+        }
+
+        .footer .footer-cor a {
+            display: block;
+            height: 30px;
+            color: #ffffff;
+            line-height: 30px;
+            transition: 0.3s all;
+        }
+
+        .footer .footer-cor a:hover {
+            /* background-color: rgb(10, 49, 83); */
+            /* color: cyan; */
+            transform: translateX(10px);
+        }
+
+        .footer .footer-cor ul li {
+            color: #ffffff;
+            margin: 0 0 15px 0;
+
+        }
+
+        .footer-for {
+            width: 100%;
+            margin: 30px 0 0 0;
+            padding: 20px 0 0 0;
+            text-align: center;
+            color: #c7ccc9;
+            font-size: 14px;
+            border-top: rgb(94, 86, 86) 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">缘润<span>鞋业</span></div>
+        <div class="items">
+            <a href="#">首页</a>
+            <a href="#">产品中心</a>
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>缘润鞋业 · 品质优选</h1>
+            <p>专注鞋履生产二十载，为您提供舒适、时尚集一体的各类鞋品</p>
+        </div>
+    </section>
+    <section class="probucts">
+        <h2>
+            热销产品
+        </h2>
+        <div class="probucts-card">
+            <div class="probucts-card-items">
+                <img src="https://picsum.photos/300/200?random=2" alt="">
+                <h3>休闲舒适运动鞋</h3>
+                <p>轻便透气，适合日常出行与运动</p>
+            </div>
+            <div class="probucts-card-items">
+                <img src="https://picsum.photos/300/200?random=7" alt="">
+                <h3>科技时尚跑鞋</h3>
+                <p>科技结合传统，职业首选</p>
+            </div>
+            <div class="probucts-card-items">
+                <img src="https://picsum.photos/300/200?random=1" alt="">
+                <h3>靓丽时尚女鞋</h3>
+                <p>经典款式，百搭时尚，青春活力</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <img src="https://picsum.photos/500/300?random=5" alt="">
+        <div class="about-text">
+            <h2>关于我们</h2>
+            <p>缘润鞋业2019年成立，是专业的国际品牌女鞋代工制造商，集设计、生产、销售于一体。</p>
+            <p>我们拥有现代化生产车间与专业设计团队，通过WCA、BSCI等多项国际认证，严格把控生产工序，保障产品品质。
+            </p>
+            <p>秉持“品质为本，客户至上”理念，产品远销海内外，成为众多国际女鞋品牌的合作方，赢得客户信赖。
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-cor">
+            <h3>快速链接</h3>
+            <a href="#">首页</a>
+            <a href="#">产品中心</a>
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+        </div>
+        <div class="footer-cor">
+            <h3>联系方式</h3>
+            <ul>
+                <li>地址：浙江省温州市瓯海区仙岩街道风康路1515号3幢2层北侧</li>
+                <li>电话：012-34567890</li>
+                <li>邮箱：service@jiangxinshoes.com</li>
+            </ul>
+        </div>
+        <div class="footer-cor">
+            <h3>关注我们</h3>
+            <ul>
+                <li>微信公众号</li>
+                <li>抖音官方号</li>
+                <li>小红书官方号</li>
+
+            </ul>
+        </div>
+        <div class="footer-for">© 2026 缘润鞋业 版权所有</div>
+    </footer>
+</body>
+
+</html>
